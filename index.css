@@ -40,9 +40,9 @@ div.calender > div {
 }
 div.calender > div.month {
   display: grid;
-  font-size: 24pt;
-  grid-template-rows: 64px repeat(6, 1fr);
-  grid-template-columns: 96px repeat(7, 1fr);
+  font-size: 12pt;
+  grid-template-rows: 32px repeat(6, 1fr);
+  grid-template-columns: 48px repeat(7, 1fr);
 }
 div.calender > div.month > div.month {
   display: inline-block;
@@ -76,7 +76,7 @@ div.calender > div.month > div.month-weeks {
 }
 div.calender > div.month > div.month-weeks > div {
   display: inline-block;
-  font-size: 24px;
+  font-size: 12pt;
   font-weight: bold;
   color: #aaa;
   text-align: center;
