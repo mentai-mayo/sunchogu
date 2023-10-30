@@ -1,0 +1,13 @@
+{
+  "name": "sunchogu",
+  "version": "0.1.0",
+  "description": "進捗管理的な",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "author": "mentai-mayo",
+  "license": "WTFPL",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
