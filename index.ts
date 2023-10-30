@@ -1,6 +1,6 @@
 
 /** ServiceWorkerスクリプトのパス */
-const sw_path = "/sunchogu/service_worker/main.js";
+const sw_path = "/sunchogu/main.js";
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register(sw_path, { scope: "/sunchogu/" }).then(reg => {
