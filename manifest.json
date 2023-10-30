@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "mentai-mayo/sunchogu",
+  "short_name": "すんちょぐ",
+  "start_url": "/sunchogu/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "進捗管理アプリ的な何か",
+  "icons": [
+    { "src": "/sunchogu/icon/icon_256.png", "sizes": "256x256", "type": "image/png" }
+  ],
+  "scope": "/sunchogu/",
+  "theme_color": "#aaa"
+}
