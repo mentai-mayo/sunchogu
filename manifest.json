@@ -10,5 +10,5 @@
     { "src": "/sunchogu/icon/icon_256.png", "sizes": "256x256", "type": "image/png" }
   ],
   "scope": "/sunchogu/",
-  "theme_color": "#aaa"
+  "theme_color": "#fff"
 }

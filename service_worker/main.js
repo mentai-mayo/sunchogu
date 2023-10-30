@@ -18,6 +18,6 @@ swself.addEventListener("activate", _ => {
 swself.addEventListener("fetch", event => {
     const url = new URL(event.request.url);
     if (origin === location.origin && cacheFiles.includes(url.pathname)) {
-        event.respondWith(caches.match(url.pathname).then(res => res ?? new Response(`"NOT_FOUND"`, { status: 404, headers: { "content-type": "application/json" } })));
+        event.respondWith(caches.match(url.pathname).then(res => res ?? fetch(event.request.url).catch(_ => new Response(`{"type":"service_worker","content":"CANNOT_FETCH_DATA"}`, { status: 404, headers: { "content-type": "application/json" } }))));
     }
 });

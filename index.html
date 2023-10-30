@@ -2,9 +2,44 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="manifest" href="/sunchogu/manifest.json">
+    <!-- <link rel="manifest" href="/sunchogu/manifest.json"> -->
+    <link rel="manifest" href="manifest.json"> <!-- デバッグ用 -->
+    <!-- <link rel="stylesheet" href="/sunchogu/index.css"> -->
+    <link rel="stylesheet" href="index.css"> <!-- デバッグ用 -->
+    <!-- <script src="/sunchogu/index.js" type="module"></script> -->
+    <script src="index.js"></script> <!-- デバッグ用 -->
+    <mata name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"></mata>
+    <title>すんちょぐ</title>
   </head>
   <body>
-    <h1>すんちょぐ</h1>
+    <div class="content">
+      <div class="calender">
+        <div class="month">
+          <div class="month" data-before-content="n月"></div>
+          <div class="month-weekday">
+            <div class="sun" data-before-content="日"></div>
+            <div data-before-content="月"></div>
+            <div data-before-content="火"></div>
+            <div data-before-content="水"></div>
+            <div data-before-content="木"></div>
+            <div data-before-content="金"></div>
+            <div class="sat" data-before-content="土"></div>
+          </div>
+          <div class="month-weeks">
+            <div data-before-content=">"></div>
+            <div data-before-content=">"></div>
+            <div data-before-content=">"></div>
+            <div data-before-content=">"></div>
+            <div data-before-content=">"></div>
+            <div data-before-content=">"></div>
+          </div>
+        </div>
+        <div class="week">週カレンダー</div>
+        <div class="day">その日のタスク</div>
+      </div>
+      <div class="task-queue">
+        たすくきゅー
+      </div>
+    </div>
   </body>
 </html>

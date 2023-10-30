@@ -1,0 +1,106 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*[data-before-content]::before {
+  content: attr(data-before-content);
+}
+
+/* スマホ用 */
+body {
+  display: grid;
+  width: calc(100vw - calc(100vw - 100%));
+  min-height: 100vh;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+body > div.content {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr 1fr;
+}
+
+div.content > div.calender {
+}
+
+/* 表示切替のギミック div.calender month/week/day */
+div.calender > div.week { display: none }
+div.calender > div.day { display: none }
+div.calender.week > div.month { display: none }
+div.calender.day > div.month { display: none }
+
+div.calender > div {
+  width: 100%;
+  height: 100%;
+}
+div.calender > div.month {
+  display: grid;
+  font-size: 24pt;
+  grid-template-rows: 64px repeat(6, 1fr);
+  grid-template-columns: 96px repeat(7, 1fr);
+}
+div.calender > div.month > div.month {
+  display: inline-block;
+  margin: auto;
+  font-weight: bold;
+  text-align: center;
+}
+div.calender > div.month > div.month-weekday {
+  display: grid;
+  border-bottom: 1px solid #000;
+  grid-column: 2 / 9;
+  grid-row: 1 / 2;
+  grid-template-columns: repeat(7, 1fr);
+}
+div.calender > div.month > div.month-weekday > div {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+div.calender > div.month > div.month-weekday > div.sun {
+  color: #f00;
+}
+div.calender > div.month > div.month-weekday > div.sat {
+  color: #08f;
+}
+div.calender > div.month > div.month-weeks {
+  display: grid;
+  border-right: 1px solid #000;
+  grid-column: 1 / 2;
+  grid-row: 2 / 8;
+}
+div.calender > div.month > div.month-weeks > div {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+  text-align: center;
+  margin: auto;
+}
+div.calender > div.month > div.sun {
+  color: #f00;
+}
+div.calender > div.month > div.sut {
+  color: #08f;
+}
+
+div.content > div.task-queue {
+  padding: 16px 32px;
+}
+
+
+
+/* タブレット用 */
+@media screen and (min-width: 481px) {
+  /*  */
+}
+
+/* PC用 */
+@media screen and (min-width: 960px) {
+  /*  */
+}

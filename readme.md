@@ -2,6 +2,8 @@
 
 進捗管理的な
 
+ページ: [https://mentai-mayo.github.io/sunchogu/]
+
 ## 参考
 
 - [Service Worker のライフサイクル](https://web.dev/articles/service-worker-lifecycle?hl=ja)
