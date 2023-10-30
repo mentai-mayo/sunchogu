@@ -9,6 +9,10 @@
   content: attr(data-before-content);
 }
 
+/* なんかよくわからんバグ直し */
+body > meta { display: none }
+body > title { display: none }
+
 /* スマホ用 */
 body {
   display: grid;
