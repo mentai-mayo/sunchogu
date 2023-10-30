@@ -3,7 +3,7 @@
 const sw_path = "/sunchogu/service_worker/main.js";
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register(sw_path, { scope: "/sunchogu" }).then(reg => {
+  navigator.serviceWorker.register(sw_path, { scope: "/sunchogu/" }).then(reg => {
   console.log("\x1b[92m[index.js]\x1b[0m", "ServiceWorker registered", reg);
   }).catch(error => {
     console.error("[index.js]", error);
